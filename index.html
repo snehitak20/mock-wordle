@@ -10,18 +10,41 @@
   </head>
 
   <body>
-    <h1 class="title">Welcome to mock Wordle</h1>
-    <div class="welcome">Press the start button to play. You have 30 seconds to guess the word! (Hint: it's a type of food)</div>
-        <div class="game-board">
-           <div class="wins-losses">
-            <span>Wins:</span>
-            <span>Losses</span>
-           </div>
+    <header>
+      <h1>Welcome to MockWordle!</h1>
+      <p class="welcome">
+        Press the start button to play. You have 30 seconds to guess the word! (Hint: it's a type of food)
+      </p>
+    </header>
 
-            <div>
-                <input type="button" value="START">
-            </div>
+    <div>
+      <button id="START" class="start">START</button>
+      <button id="again">PLAY AGAIN</button>
     </div>
+
+   
+    <div id="game-board">
+      <div id="word">
+        <span id="words"></span>
+      </div>
+    </div>
+
+     <div id="results">
+       <div id="resultbox">
+         <div class="scores">
+           <h2>WINS: <span id="wins" class="w-score">0</span></h2>
+           <h2>LOSSES: <span id="losses" class="l-score">0</span></h2>
+         </div>
+       </div>
+     </div>
+
+     <div id="timer">
+       <div id="timer" class="timer-word">30
+         <h3>seconds left!</h3>
+       </div>
+     </div>
+
+      
       <script src="./assets/wordle.js"></script>
 
   </body>
